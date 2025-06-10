@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Salário</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <script>
+    function calcNovoSalario(nome, salario) {
+      const novoSalario = salario * 1.10;
+      console.log(`${nome}, seu novo salário é: R$${novoSalario.toFixed(2)}`);
+      return novoSalario;
+    }
+
+    // Exemplo de uso 
+    calcNovoSalario("João", 3000);
+  </script>
+
+</body>
+</html>

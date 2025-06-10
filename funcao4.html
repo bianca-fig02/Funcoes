@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Calcular Soma e Média</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <script>
+    function somaEMedia(num) {
+      const numeroAnterior = num - 1;
+      const numeroSucessor = num + 1;
+      const numeroPosterior = num + 2;
+
+      const soma = numeroAnterior + numeroSucessor + numeroPosterior;
+      const media = soma / 3;
+
+      console.log(`Soma: ${soma}, Média: ${media.toFixed(2)}`);
+      return { soma, media };
+    }
+
+    //exemplo né véi aff
+    somaEMedia(5);
+  </script>
+
+</body>
+</html>
